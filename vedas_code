@@ -1,0 +1,47 @@
+import turtle
+pixel_size=30
+rows=20
+columns=20
+def initialize():
+    turtle.speed(1)
+    turtle.up()
+    turtle.goto(-300,300)
+    turtle.pensize(1)
+    
+    turtle.pencolor('black')
+
+def pixel(pixel_color):
+
+    turtle.fillcolor(pixel_color)
+    turtle.down()
+    turtle.begin_fill()
+    i=0
+    while i<4:
+        turtle.forward(pixel_size)
+        turtle.right(90)
+        i=i+1
+    turtle.end_fill()
+
+initialize()
+pixel('red')
+turtle.goto(-270,300)
+pixel('green')
+turtle.goto(-240,300)
+pixel('yellow')
+
+    
+def mixed_quotes():
+    print('She said \"i dont like broccoli\"')
+def tab():
+    print('A\tB\tC\tD\tE')
+def backslashes():
+    print('This/is\\a/test\\.')
+def newline():
+    print('This\nis a string\nwith newlines in\nthe middle.')
+def mixed():
+    print('She\tsaid\"I\\\ndont\tlike\\\nbroccoli.\"')
+print('Mixed Quotes');mixed_quotes()
+print('Tab-seperated:');tab()
+print('Backslashes:');backslashes()
+print('Newlines:');newline()
+print('All together:');mixed()

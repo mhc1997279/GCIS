@@ -1,0 +1,23 @@
+def countdown(number):
+    times = number
+    summ = 0
+    while times >= 0:
+        print(times)
+        summ = summ + times
+        times = times - 1
+    return summ
+
+def count_up(number):
+    times = number
+    summ = 0
+    while times <= number:
+        print(times)
+        summ = summ + times
+        times = times + 1
+    return summ
+
+def main():
+    print ("sum is:", countdown(5))
+    print ("sum is:", count_up(4))
+
+main()
